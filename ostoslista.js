@@ -5,8 +5,6 @@ function SetUpUsTheList()
 {
 	const items = document.getElementsByTagName("span");
 	const cookie = getCookie('keksi');
-	console.log(cookie);
-	
 	for (let i = 0; i < items.length; ++i)
 	{
 		const item = items[i];
