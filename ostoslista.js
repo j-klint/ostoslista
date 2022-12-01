@@ -5,6 +5,7 @@ function SetUpUsTheList()
 {
 	const items = document.getElementsByTagName("span");
 	const cookie = getCookie('keksi');
+	console.log(cookie);
 	
 	for (let i = 0; i < items.length; ++i)
 	{
@@ -32,7 +33,7 @@ function setCookie(cname,cvalue)
 	const d = new Date();
 	d.setTime(d.getTime() + (24*60*60*1000));
 	let expires = "expires=" + d.toUTCString();
-	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;SameSite=Lax";
+	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/; SameSite=None; Secure";
 }
 
 function getCookie(cname)
